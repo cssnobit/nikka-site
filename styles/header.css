@@ -60,17 +60,18 @@ header .h-top > .flex {
     gap: 4px;
 }
 
-.h-right a {
+.h-right a,
+.whatsapp a {
     text-decoration: none;
     gap: 8px;
     color: black;
 }
 
-.h-right .whatsapp {
+.whatsapp a {
     transition: 0.4s ease;
 }
 
-.h-right .whatsapp:hover {
+.whatsapp a:hover {
     transform: scale(1.1);
 }
 
@@ -153,6 +154,10 @@ header .h-top > .flex {
 
     header .h-top > .flex {
         flex-direction: column;
+    }
+
+    .h-mobile > .flex {
+        gap: 20px;
     }
 
     header input {

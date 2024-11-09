@@ -1,0 +1,74 @@
+@import url("config.css");
+
+.img-mob {
+    display: none;
+}
+
+header {
+    position: static;
+}
+
+main {
+    padding-top: 0px;
+}
+
+section.story {
+    padding: 80px 4%;
+}
+
+section.story h1 {
+    font-size: 1.9em;
+    color: var(--cor1);
+    margin-bottom: 15px;
+}
+
+section.story h2 {
+    color: var(--cor1);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.subject::before {
+    content: '';
+    margin-right: 9px;
+    background-color: var(--cor1);
+    height: 22px;
+    width: 7px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+section.story p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+section.story p span.mark {
+    color: var(--cor2);
+    font-weight: 600;
+}
+
+section.story .s-bottom p {
+    margin-bottom: 21px;
+}
+
+section.story img {
+    padding: inherit;
+    margin: auto;
+    display: block;
+}
+
+article.flex {
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media screen and (max-width: 1080px) {
+    .img-mob {
+        display: none;
+    }
+    
+    .img-desktop {
+        display: block;
+    }
+}
