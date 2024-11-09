@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKKA Calçados | Início</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/config.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/slide.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="scripts/slide.js" defer></script>
+    <script src="scripts/ham-menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div class="h-top">
+                <div class="flex">
+                    <div class="h-left">
+                        <a href="index.html"><img src="images/logo.png" alt="logotipo da empresa niika calçados"></a>
+                    </div>
+                    <div class="h-middle">
+                        <div class="flex search">
+                            <input type="text" placeholder="Pesquise alguma coisa...">
+                            <div class="search-icon flex">
+                                <img src="images/search-icon.png" alt="ícone de busca">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-right h-desktop">
+                        <div class="flex">                    
+                            <div class="menu">
+                                <span class="flex">Institucional <img src="images/arrow-icon.png" alt="seta de opções de navegações"></span>
+
+                                <!-- NÃO ESQUECER DE CRIAR CADA UMA DAS PÁGINAS ABAIXO -->
+                                <div class="dropdown-content">
+                                    <a href="historia.html">Nossa história</a>
+                                    <a href="cultura-organizacional.html">Cultura Organizacional</a>
+                                </div>
+                            </div>
+
+                            <!-- COLOCAR LINK PARA O WHATSAPP -->
+                            <div class="whatsapp"><span><a class="flex" href="#" target="_blank">FAQ<img src="images/whatsapp-icon.png" alt="ícone whatsapp"></a></span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="h-mobile">
+                        <nav>
+                            <ul class="flex">
+                                <li><a href="historia.html">Nossa história</a></li>
+                                <li><a href="cultura-organizacional.html">Cultura Organizacional</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="h-bottom h-desktop">
+                <nav>
+                    <ul class="flex">
+                        <li><a href="masculino.html">Masculino</a></li>
+                        <li><a href="feminino.html">Feminino</a></li>
+                        <li><a href="infantil.html">Infantil</a></li>
+                        <li><a href="esporte.html">Esporte</a></li>
+                        <li><a href="sandalia.html">Sandálias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="slider">
+            <!-- LOCAL QUE FICARÁ AS IMAGENS -->
+        <div class="slider-content">
+            <!-- INPUT DO TIPO RADIO PARA SERVIR COMO PONTE PARA O JS, UM INPUT PARA CADA IMAGEM -->
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <!-- UMA DIV PARA CADA IMAGEM -->
+            <div class="slide-box primeiro">
+                <!-- PARA QUE O EFEITO SEJA RESPONSIVO, É NECESSÁRIO TER A MESMA IMAGEM COM OUTRA RESOLUÇÃO, AQUI ABAIXO COLOQUE A TAG IMG REFERENCIANDO A IMAGEM DESKTOP E MOBILE E DEPOIS COLOQUE UMA CLASSE QUE DISTINGUEM UMA DA OUTRA -->
+                <img class="img-desktop" src="images/arte-1.jpg" alt="slide 1">
+                <img class="img-mobile" src="images/arte-1-mob.jpg" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <!-- PARA QUE O EFEITO SEJA RESPONSIVO, É NECESSÁRIO TER A MESMA IMAGEM COM OUTRA RESOLUÇÃO, AQUI ABAIXO COLOQUE A TAG IMG REFERENCIANDO A IMAGEM DESKTOP E MOBILE E DEPOIS COLOQUE UMA CLASSE QUE DISTINGUEM UMA DA OUTRA -->
+                <img class="img-desktop" src="images/arte-2.jpg" alt="slide 2">
+                <img class="img-mobile" src="images/arte-2-mob.jpg" alt="slide 2">
+            </div>
+
+            <div class="slide-box">
+                <!-- PARA QUE O EFEITO SEJA RESPONSIVO, É NECESSÁRIO TER A MESMA IMAGEM COM OUTRA RESOLUÇÃO, AQUI ABAIXO COLOQUE A TAG IMG REFERENCIANDO A IMAGEM DESKTOP E MOBILE E DEPOIS COLOQUE UMA CLASSE QUE DISTINGUEM UMA DA OUTRA -->
+                <img class="img-desktop" src="images/arte-3.jpg" alt="slide 3">
+                <img class="img-mobile" src="images/arte-3-mob.jpg" alt="slide 3">
+            </div>
+            
+            <!-- NAVEGAÇÃO AUTOMÁTICA DAS IMAGENS -->
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <!-- NAVEGAÇÃO MANUAL -->
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+        </section>
+
+        <section class="categories">
+            <h2><em>SELECIONE</em> UMA CATEGORIA</h2>
+            <div class="categories-opt">
+                <ul class="flex">
+                    <li><a href="masculino.html">Masculino</a></li>
+                    <li><a href="feminino.html">Feminino</a></li>
+                    <li><a href="infantil.html">Infantil</a></li>
+                    <li><a href="esporte.html">Esporte</a></li>
+                    <li><a href="sandalia.html">Sandálias</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="best-sellers" id="s-bestsellers">
+            <h2>OS MAIS <em>VENDIDOS.</em></h2>
+            <div class="p-desktop flex products">
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-mobile flex products">
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="best-prices" id="s-bestprices">
+            <h2>MELHORES <em>PREÇOS.</em></h2>
+            <div class="p-desktop flex products">
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-mobile flex products">
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/sapato-1.png" alt="foto do produto">
+                    <h3>Nome do produto</h3>
+                    <div class="info-price">
+                        <p class="price">R$0,00</p>                   
+                        <p class="installments">6x de R$0,00</p>                   
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex f-general">
+            <div class="f-left">
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="historia.html">Nossa História</a></li>
+                    <li><a href="cultura-organizacional.html">Cultura Organizacional</a></li>
+                </ul>
+            </div>
+            <div class="f-middle">
+                <h4>Destaque</h4>
+                <ul>
+                    <li><a href="#s-bestsellers">Os Mais Vendidos</a></li>
+                    <li><a href="#s-bestprices">Melhores Preços</a></li>
+                </ul>
+            </div>
+            <div class="f-right flex">
+                <h4>Receba Novidades!</h4>
+                <div class="flex email">
+                    <input type="email" placeholder="Digite seu email">
+                    <div class="submit-icon flex">
+                        <img src="images/submit-icon.png" alt="ícone de enviar">
+                    </div>
+                </div>
+                <div class="social-medias flex">
+                    <a href="https://www.instagram.com/nikka_of/" target="_blank"><img src="images/instagram-icon.png" alt="ícone instagram"></a>
+                    <a href="https://www.linkedin.com/company/nika08/" target="_blank"><img src="images/linkedin-icon.png" alt="ícone linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Copyright &copy; NIKKA CALÇADOS - TODOS OS DIREITOS RESERVADOS</p>
+    </footer>
+</body>
+</html>

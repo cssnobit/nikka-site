@@ -1,0 +1,90 @@
+@import url("config.css");
+
+/* MARGEM DE SCROLL DAS SECTIONS*/
+#s-bestsellers, #s-bestprices {
+    scroll-margin: 100px;
+}
+
+section.best-prices .p-mobile,
+section.best-sellers .p-mobile {
+    display: none;
+}
+
+main {
+    padding-top: 190px;
+}
+
+em {
+    color: var(--cor1);
+    font-style: normal;
+    font-weight: 800;
+}
+
+section.categories {
+    padding: 80px 4%;
+}
+
+section h2 {
+    margin-bottom: 47px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.categories-opt ul {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories-opt ul li {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.categories-opt ul li a {
+    display: inline-block;
+    background-color: var(--cor2);
+    padding: 16px 24px;
+    width: 200px;
+    min-width: 150px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 12px;
+    color: black;
+    text-decoration: none;
+    transition: 0.14s;
+}
+
+.categories-opt ul li a:hover {
+    background-color: var(--cor1);
+    margin-top: -12px;
+}
+
+section.best-sellers {
+    padding: 80px 4%;
+}
+
+.products {
+    justify-content: space-evenly;
+}
+
+section.best-prices {
+    padding: 80px 4%;
+}
+
+@media screen and (max-width: 1080px) {
+    section.categories .categories-opt .flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    section.best-sellers .p-desktop,
+    section.best-prices .p-desktop {
+        display: none;
+    }
+
+    section.best-prices .p-mobile,
+    section.best-sellers .p-mobile {
+        display: flex;
+    }
+}

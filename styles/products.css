@@ -1,0 +1,49 @@
+@import url("config.css");
+
+main {
+    padding-top: 130px;
+}
+
+section.products-catalog {
+    padding: 80px 4%;
+}
+
+section.products-catalog .grid {
+    grid-template-columns: repeat(auto-fit, 204px);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 22px 16px;
+    cursor: pointer;
+}
+
+.item:hover {
+    border: 2px solid var(--amarelo1);
+}
+
+.item img {
+    margin-bottom: 19px;
+}
+
+.item h3 {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.item p.price {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: -6px;
+}
+
+@media screen and (max-width: 1080px) {
+    .item img {
+        width: 120px;
+    }
+}
