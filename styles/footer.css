@@ -67,6 +67,7 @@ footer p.copyright {
 @media screen and (max-width: 1080px) {
     footer input {
         font-size: 11px;
+        width: 120px;
     }
 
     .f-general h4 {
@@ -75,6 +76,6 @@ footer p.copyright {
 
     footer .f-left a, 
     footer .f-middle a {
-        font-size: 0.88rem;
+        font-size: 0.78rem;
     }
 }

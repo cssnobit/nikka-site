@@ -155,4 +155,7 @@ header .h-top > .flex {
         flex-direction: column;
     }
 
+    header input {
+        width: 260px;
+    }
 }
