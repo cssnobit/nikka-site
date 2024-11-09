@@ -8,17 +8,17 @@ main {
     padding-top: 0px;
 }
 
-section.story {
+section.company {
     padding: 80px 4%;
 }
 
-section.story h1 {
+section.company h1 {
     font-size: 2.3em;
     color: var(--cor1);
     margin-bottom: 15px;
 }
 
-section.story h2 {
+section.company h2 {
     color: var(--cor1);
     font-size: 1.8em;
     margin-bottom: 15px;
@@ -34,27 +34,46 @@ section.story h2 {
     display: inline-block;
 }
 
-section.story p {
+section.company p {
     font-size: 18px;
     text-align: justify;
 }
 
-section.story p span.mark {
+section.company p span.mark {
     color: var(--cor2);
     font-weight: 600;
 }
 
-section.story .s-bottom p {
+section.company .s-bottom p {
     margin-bottom: 21px;
 }
 
-section.story img {
+section.company img {
     padding: inherit;
     margin: auto;
     display: block;
 }
 
+
+section.company ul li.topic {
+    color: var(--cor2);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section.company .top-mvv {
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
 article.flex {
     flex-direction: column;
     gap: 30px;
+}
+
+@media screen and (max-width: 1080px) {
+    section.company .flex {
+        flex-direction: column;
+    }
 }
