@@ -20,6 +20,7 @@ section.products-catalog .grid {
     border-radius: 12px;
     padding: 22px 12px;
     cursor: pointer;
+    width: 204px;
 }
 
 .item:hover {
@@ -47,4 +48,7 @@ section.products-catalog .grid {
         width: 90px;
     }
     
+    main {
+        padding-top: 13px;
+    }
 }

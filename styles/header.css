@@ -5,7 +5,7 @@ header {
     position: fixed;
     z-index: 1;
     width: 100%;
-    background-color: var(--branco1);
+    background-color: rgba(217, 206, 186, 0.959);
 }
 
 header > .flex {

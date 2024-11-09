@@ -9,7 +9,7 @@
 }
 
 .f-general h4 {
-    font-size: 20px;
+    font-size: 21px;
 }
 
 footer input {
@@ -35,7 +35,7 @@ footer .f-middle ul li {
 
 footer .f-left a, 
 footer .f-middle a {
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: none;
     color: var(--branco1);
 }
